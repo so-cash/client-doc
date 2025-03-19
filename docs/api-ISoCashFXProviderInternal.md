@@ -1,0 +1,7 @@
+## ISoCashFXProviderInternal
+
+
+  TO BE CONTINUED...
+
+
+  

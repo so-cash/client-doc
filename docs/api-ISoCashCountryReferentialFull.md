@@ -1,0 +1,7 @@
+## ISoCashCountryReferentialFull
+
+
+  TO BE CONTINUED...
+
+
+  

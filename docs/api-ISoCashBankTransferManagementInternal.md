@@ -1,0 +1,7 @@
+## ISoCashBankTransferManagementInternal
+
+
+  TO BE CONTINUED...
+
+
+  

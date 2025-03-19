@@ -1,0 +1,7 @@
+## ISoCashAccountData
+
+
+  TO BE CONTINUED...
+
+
+  

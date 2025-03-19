@@ -1,0 +1,7 @@
+## IWhitelistedSendersInternal
+
+
+  TO BE CONTINUED...
+
+
+  

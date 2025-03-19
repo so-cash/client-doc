@@ -1,0 +1,7 @@
+## ISoCashCountryManager
+
+
+  TO BE CONTINUED...
+
+
+  

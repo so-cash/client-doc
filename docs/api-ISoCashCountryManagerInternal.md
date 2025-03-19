@@ -1,0 +1,7 @@
+## ISoCashCountryManagerInternal
+
+
+  TO BE CONTINUED...
+
+
+  

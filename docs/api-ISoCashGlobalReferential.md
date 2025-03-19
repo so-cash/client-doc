@@ -1,0 +1,7 @@
+## ISoCashGlobalReferential
+
+
+  TO BE CONTINUED...
+
+
+  
