@@ -1,7 +1,2 @@
-## IERC20MetadataInternal
+## 📜 IERC20MetadataInternal
 
-
-  TO BE CONTINUED...
-
-
-  

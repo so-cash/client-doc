@@ -470,7 +470,7 @@
           "outputs": [
             {
               "internalType": "contract ISoCashCountryReferential",
-              "name": "",
+              "name": "contractAddress",
               "type": "address"
             }
           ],
@@ -1603,7 +1603,7 @@
           "outputs": [
             {
               "internalType": "contract ISoCashCountryReferential",
-              "name": "",
+              "name": "contractAddress",
               "type": "address"
             }
           ],
@@ -9185,7 +9185,7 @@
           "outputs": [
             {
               "internalType": "contract ISoCashCountryReferential",
-              "name": "",
+              "name": "contractAddress",
               "type": "address"
             }
           ],
