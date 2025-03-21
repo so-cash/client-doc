@@ -31,6 +31,6 @@ function simulateTransfer(address fromAccount, tuple(address account, bytes11 bi
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ExecutionPlan](./api-t-ExecutionPlan.md) | tuple |  |
+|1 | ⌀ | [ExecutionPlan](./api-t-ExecutionPlan.md) | tuple |  |
 
 

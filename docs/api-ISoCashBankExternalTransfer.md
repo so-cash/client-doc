@@ -15,6 +15,6 @@ function transfer(tuple(address account, bytes11 bic, bytes32 iban) to, uint256 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 

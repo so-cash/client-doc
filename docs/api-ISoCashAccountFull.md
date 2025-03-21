@@ -77,14 +77,15 @@ function accountNumber() view returns (uint32)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
+|1 | ⌀ | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
 
 
 #### ⚙️ __allowance__
+query the allowance granted from given holder to given spender
+
 ```js
 function allowance(address holder, address spender) view returns (uint256)
 ```
-query the allowance granted from given holder to given spender
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | holder | address | address | approver of allowance |
@@ -93,15 +94,17 @@ query the allowance granted from given holder to given spender
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 | token allowance |
 
 
 #### ⚙️ __approve__
+grant approval to spender to spend tokens
+
 ```js
 function approve(address spender, uint256 amount) returns (bool)
 ```
-grant approval to spender to spend tokens
 prefer ERC20Extended functions to avoid transaction-ordering vulnerability (see https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729)
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | spender | address | address | recipient of allowance |
@@ -110,7 +113,7 @@ prefer ERC20Extended functions to avoid transaction-ordering vulnerability (see 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool | success status (always true; otherwise function should revert) |
 
 
 #### ⚙️ __balance__
@@ -119,14 +122,15 @@ function balance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __balanceOf__
+query the token balance of given account
+
 ```js
 function balanceOf(address account) view returns (uint256)
 ```
-query the token balance of given account
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | account | address | address | address to query |
@@ -134,7 +138,7 @@ query the token balance of given account
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 | token balance |
 
 
 #### ⚙️ __bank__
@@ -143,7 +147,7 @@ function bank() view returns (address)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashBank](./api-t-ISoCashBank.md) | address |  |
+|1 | ⌀ | [ISoCashBank](./api-t-ISoCashBank.md) | address |  |
 
 
 #### ⚙️ __blacklist__
@@ -156,13 +160,14 @@ function blacklist(address oldSender)
 
 
 #### ⚙️ __decimals__
+return token decimals, generally used only for display purposes
+
 ```js
 function decimals() view returns (uint8)
 ```
-return token decimals, generally used only for display purposes
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint8 | uint8 |  |
+|1 | ⌀ | uint8 | uint8 | token decimals |
 
 
 #### ⚙️ __fullBalance__
@@ -171,7 +176,7 @@ function fullBalance() view returns (int256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __getAttributeAddr__
@@ -185,7 +190,7 @@ function getAttributeAddr(bytes32 name) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __getAttributeNum__
@@ -199,7 +204,7 @@ function getAttributeNum(bytes32 name) view returns (int256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __getAttributeStr__
@@ -213,7 +218,7 @@ function getAttributeStr(bytes32 name) view returns (string)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __getHTLCPayment__
@@ -227,7 +232,7 @@ function getHTLCPayment(bytes32 id) view returns (tuple(tuple(address account, b
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [HTLC](./api-t-HTLC.md) | tuple |  |
+|1 | ⌀ | [HTLC](./api-t-HTLC.md) | tuple |  |
 
 
 #### ⚙️ __iban__
@@ -236,7 +241,7 @@ function iban() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __isWhitelisted__
@@ -250,7 +255,7 @@ function isWhitelisted(address sender) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __lockFunds__
@@ -278,17 +283,18 @@ function lockedBalance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __name__
+return token name
+
 ```js
 function name() view returns (string)
 ```
-return token name
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string | token name |
 
 
 #### ⚙️ __owner__
@@ -297,7 +303,7 @@ function owner() view returns (address)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __renounceOwnership__
@@ -335,30 +341,33 @@ function setAttributeStr(bytes32 name, string value)
 
 
 #### ⚙️ __symbol__
+return token symbol
+
 ```js
 function symbol() view returns (string)
 ```
-return token symbol
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string | token symbol |
 
 
 #### ⚙️ __totalSupply__
+query the total minted token supply
+
 ```js
 function totalSupply() view returns (uint256)
 ```
-query the total minted token supply
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 | token supply |
 
 
 #### ⚙️ __transfer__
+transfer tokens to given recipient
+
 ```js
 function transfer(address recipient, uint256 amount) returns (bool)
 ```
-transfer tokens to given recipient
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | recipient | address | address | beneficiary of token transfer |
@@ -367,7 +376,7 @@ transfer tokens to given recipient
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool | success status (always true; otherwise function should revert) |
 
 
 #### ⚙️ __transferEx__
@@ -383,14 +392,15 @@ function transferEx(tuple(address account, bytes11 bic, bytes32 iban) recipient,
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferFrom__
+transfer tokens to given recipient on behalf of given holder
+
 ```js
 function transferFrom(address holder, address recipient, uint256 amount) returns (bool)
 ```
-transfer tokens to given recipient on behalf of given holder
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | holder | address | address | holder of tokens prior to transfer |
@@ -400,7 +410,7 @@ transfer tokens to given recipient on behalf of given holder
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool | success status (always true; otherwise function should revert) |
 
 
 #### ⚙️ __transferLockedFunds__
@@ -417,7 +427,7 @@ function transferLockedFunds(bytes32 key, tuple(address account, bytes11 bic, by
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferOwnership__
@@ -441,7 +451,7 @@ function unlockFunds(bytes32 key, string secret) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unlockedBalance__
@@ -450,7 +460,7 @@ function unlockedBalance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __verifyHTLC__

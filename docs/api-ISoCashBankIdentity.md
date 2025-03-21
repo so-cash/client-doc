@@ -17,7 +17,7 @@ function bic() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __codes__
@@ -36,6 +36,6 @@ function version() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 

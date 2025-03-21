@@ -34,7 +34,7 @@ function isWhitelisted(address sender) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __whitelist__

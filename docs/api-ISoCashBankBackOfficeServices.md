@@ -52,7 +52,7 @@ function credit(address account, uint256 amount, string details) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __debit__
@@ -68,7 +68,7 @@ function debit(address account, uint256 amount, string details) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __getNostroBalance__
@@ -98,7 +98,7 @@ function isAccountActive(address account) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __isAccountRegistered__
@@ -112,7 +112,7 @@ function isAccountRegistered(address account) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __isCorrespondentRegistered__
@@ -126,7 +126,7 @@ function isCorrespondentRegistered(address correspondent) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __lockFunds__
@@ -141,7 +141,7 @@ function lockFunds(address account, uint256 amount) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __nostroAccountModel__
@@ -156,7 +156,7 @@ function nostroAccountModel(address bank, address account) view returns (uint8)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [BankModel](./api-t-BankModel.md) | uint8 |  |
+|1 | ⌀ | [BankModel](./api-t-BankModel.md) | uint8 |  |
 
 
 #### ⚙️ __registerAccount__
@@ -170,7 +170,7 @@ function registerAccount(address account) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __registerNostroAccount__
@@ -184,7 +184,7 @@ function registerNostroAccount(tuple(uint8 model, address bank, address account)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __toggleAccountActive__
@@ -198,7 +198,7 @@ function toggleAccountActive(address account) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unlockFunds__
@@ -213,7 +213,7 @@ function unlockFunds(address account, uint256 amount) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unregisterAccount__
@@ -227,7 +227,7 @@ function unregisterAccount(address account) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unregisterNostroAccount__
@@ -242,6 +242,6 @@ function unregisterNostroAccount(address bank, address account) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 

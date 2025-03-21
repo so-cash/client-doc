@@ -51,7 +51,7 @@ function bic() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __blacklist__
@@ -85,7 +85,7 @@ function getFXRateSource(bytes3 base, bytes3 quote) view returns (string)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __getRateSigner__
@@ -94,7 +94,7 @@ function getRateSigner() view returns (address)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __hashOfFXRate__
@@ -108,7 +108,7 @@ function hashOfFXRate(tuple(uint256 rate, uint256 rateTime, uint256 expiryTime, 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bytes32 | bytes32 |  |
+|1 | ⌀ | bytes32 | bytes32 |  |
 
 
 #### ⚙️ __isWhitelisted__
@@ -122,7 +122,7 @@ function isWhitelisted(address sender) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __setCurrencyAccount__
@@ -171,7 +171,7 @@ function settlement(tuple(address account, bytes11 bic, bytes32 iban) from, tupl
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __verifyFXRate__
@@ -186,7 +186,7 @@ function verifyFXRate(tuple(uint256 rate, uint256 rateTime, uint256 expiryTime, 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __version__
@@ -195,7 +195,7 @@ function version() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __whitelist__

@@ -20,7 +20,7 @@ function owner() view returns (address)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __renounceOwnership__

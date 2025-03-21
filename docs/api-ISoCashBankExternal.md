@@ -69,7 +69,7 @@ function accountNumberOf(address account) view returns (uint32)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
+|1 | ⌀ | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
 
 
 #### ⚙️ __addressOf__
@@ -83,7 +83,7 @@ function addressOf(uint32 accountNumber) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
+|1 | ⌀ | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
 
 
 #### ⚙️ __addressOfFullAccount__
@@ -97,7 +97,7 @@ function addressOfFullAccount(string account) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
+|1 | ⌀ | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
 
 
 #### ⚙️ __balanceOf__
@@ -111,7 +111,7 @@ function balanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __bankIdentifier__
@@ -129,7 +129,7 @@ function bic() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __codes__
@@ -148,7 +148,7 @@ function decimals() view returns (uint8)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint8 | uint8 |  |
+|1 | ⌀ | uint8 | uint8 |  |
 
 
 #### ⚙️ __decodeIBAN__
@@ -177,7 +177,7 @@ function fullBalanceOf(address account) view returns (int256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __ibanOf__
@@ -191,7 +191,7 @@ function ibanOf(address account) view returns (string)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __lockFunds__
@@ -205,7 +205,7 @@ function lockFunds(uint256 amount) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __lockedBalanceOf__
@@ -219,18 +219,20 @@ function lockedBalanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __name__
+Get the name of the account
+
 ```js
 function name() view returns (string)
 ```
-Get the name of the account
 Get the name of the account for developers
+
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string | The name of the account |
 
 
 #### ⚙️ __symbol__
@@ -239,7 +241,7 @@ function symbol() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __totalSupply__
@@ -248,7 +250,7 @@ function totalSupply() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __transfer__
@@ -264,7 +266,7 @@ function transfer(tuple(address account, bytes11 bic, bytes32 iban) to, uint256 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferInfo__
@@ -278,7 +280,7 @@ function transferInfo(uint256 id) view returns (tuple(address sender, tuple(addr
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [TransferInfo](./api-t-TransferInfo.md) | tuple |  |
+|1 | ⌀ | [TransferInfo](./api-t-TransferInfo.md) | tuple |  |
 
 
 #### ⚙️ __unlockFunds__
@@ -292,7 +294,7 @@ function unlockFunds(uint256 amount) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unlockedBalanceOf__
@@ -306,7 +308,7 @@ function unlockedBalanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __version__
@@ -315,6 +317,6 @@ function version() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 

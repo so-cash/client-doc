@@ -8,7 +8,7 @@ function accountNumber() view returns (uint32)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
+|1 | ⌀ | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
 
 
 #### ⚙️ __bank__
@@ -17,7 +17,7 @@ function bank() view returns (address)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashBank](./api-t-ISoCashBank.md) | address |  |
+|1 | ⌀ | [ISoCashBank](./api-t-ISoCashBank.md) | address |  |
 
 
 #### ⚙️ __getAttributeAddr__
@@ -31,7 +31,7 @@ function getAttributeAddr(bytes32 name) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __getAttributeNum__
@@ -45,7 +45,7 @@ function getAttributeNum(bytes32 name) view returns (int256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __getAttributeStr__
@@ -59,7 +59,7 @@ function getAttributeStr(bytes32 name) view returns (string)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __iban__
@@ -68,7 +68,7 @@ function iban() view returns (string)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | string | string |  |
+|1 | ⌀ | string | string |  |
 
 
 #### ⚙️ __setAttributeAddr__

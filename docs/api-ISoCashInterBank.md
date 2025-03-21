@@ -30,7 +30,7 @@ function advice(uint256 amount, uint8 direction, uint256 id) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __interbankNetting__
@@ -45,7 +45,7 @@ function interbankNetting(uint256 amount, uint256 id) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __interbankTransfer__
@@ -62,6 +62,6 @@ function interbankTransfer(tuple(uint8 model, address bank, address account) ssi
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 

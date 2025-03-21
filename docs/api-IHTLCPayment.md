@@ -40,7 +40,7 @@ function getHTLCPayment(bytes32 id) view returns (tuple(tuple(address account, b
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [HTLC](./api-t-HTLC.md) | tuple |  |
+|1 | ⌀ | [HTLC](./api-t-HTLC.md) | tuple |  |
 
 
 #### ⚙️ __verifyHTLC__

@@ -38,7 +38,7 @@ function allowance(address owner, address spender) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __approve__
@@ -53,7 +53,7 @@ function approve(address spender, uint256 value) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __balanceOf__
@@ -67,7 +67,7 @@ function balanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __decreaseAllowance__
@@ -82,7 +82,7 @@ function decreaseAllowance(address spender, uint256 subtractedValue) returns (bo
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __increaseAllowance__
@@ -97,7 +97,7 @@ function increaseAllowance(address spender, uint256 addedValue) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __totalSupply__
@@ -106,7 +106,7 @@ function totalSupply() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __transfer__
@@ -121,7 +121,7 @@ function transfer(address to, uint256 value) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferFrom__
@@ -137,6 +137,6 @@ function transferFrom(address from, address to, uint256 value) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 

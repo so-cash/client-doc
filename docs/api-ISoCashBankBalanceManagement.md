@@ -47,7 +47,7 @@ function accountNumberOf(address account) view returns (uint32)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
+|1 | ⌀ | [AccountNumber](./api-t-AccountNumber.md) | uint32 |  |
 
 
 #### ⚙️ __addressOf__
@@ -61,7 +61,7 @@ function addressOf(uint32 accountNumber) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
+|1 | ⌀ | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
 
 
 #### ⚙️ __addressOfFullAccount__
@@ -75,7 +75,7 @@ function addressOfFullAccount(string account) view returns (address)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
+|1 | ⌀ | [ISoCashAccount](./api-t-ISoCashAccount.md) | address |  |
 
 
 #### ⚙️ __fullBalanceOf__
@@ -89,7 +89,7 @@ function fullBalanceOf(address account) view returns (int256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __lockedBalanceOf__
@@ -103,7 +103,7 @@ function lockedBalanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __unlockedBalanceOf__
@@ -117,6 +117,6 @@ function unlockedBalanceOf(address account) view returns (uint256)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 

@@ -44,7 +44,7 @@ function isWhitelisted(address a) view returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __owner__
@@ -52,9 +52,10 @@ function isWhitelisted(address a) view returns (bool)
 function owner() view returns (address)
 ```
 Returns the address of the current owner.
+
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | address | address |  |
+|1 | ⌀ | address | address |  |
 
 
 #### ⚙️ __renounceOwnership__
@@ -62,11 +63,13 @@ Returns the address of the current owner.
 function renounceOwnership()
 ```
 Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.
+
 #### ⚙️ __transferOwnership__
 ```js
 function transferOwnership(address newOwner)
 ```
 Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
 |1 | newOwner | address | address |  |

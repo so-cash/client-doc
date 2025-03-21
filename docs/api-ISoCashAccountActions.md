@@ -8,7 +8,7 @@ function balance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __fullBalance__
@@ -17,7 +17,7 @@ function fullBalance() view returns (int256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | int256 | int256 |  |
+|1 | ⌀ | int256 | int256 |  |
 
 
 #### ⚙️ __lockFunds__
@@ -45,7 +45,7 @@ function lockedBalance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 
 #### ⚙️ __transferEx__
@@ -61,7 +61,7 @@ function transferEx(tuple(address account, bytes11 bic, bytes32 iban) recipient,
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferLockedFunds__
@@ -78,7 +78,7 @@ function transferLockedFunds(bytes32 key, tuple(address account, bytes11 bic, by
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unlockFunds__
@@ -93,7 +93,7 @@ function unlockFunds(bytes32 key, string secret) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __unlockedBalance__
@@ -102,6 +102,6 @@ function unlockedBalance() view returns (uint256)
 ```
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | uint256 | uint256 |  |
+|1 | ⌀ | uint256 | uint256 |  |
 
 

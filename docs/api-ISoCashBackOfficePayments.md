@@ -15,7 +15,7 @@ function decidePendingTransfer(uint256 id, uint8 status, string reason) returns 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __requestNetting__
@@ -31,7 +31,7 @@ function requestNetting(address correspondent, address loro, uint256 amount) ret
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __synchroNostro__
@@ -46,7 +46,7 @@ function synchroNostro(address bank, address account) returns (bool)
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
 #### ⚙️ __transferFrom__
@@ -63,6 +63,6 @@ function transferFrom(address from, tuple(address account, bytes11 bic, bytes32 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | null | bool | bool |  |
+|1 | ⌀ | bool | bool |  |
 
 
