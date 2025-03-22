@@ -1,4 +1,4 @@
-## 📜 IERC20Metadata
+## 📜 ERC20 metadata interface
 
 ### Methods
 

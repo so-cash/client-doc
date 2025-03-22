@@ -1,4 +1,4 @@
-## 📜 IERC20
+## 📜 ERC20 interface
 
 see https://eips.ethereum.org/EIPS/eip-20
 

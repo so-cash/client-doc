@@ -1,2 +1,2 @@
-## 📜 IERC20MetadataInternal
+## 📜 ERC20 metadata internal interface
 

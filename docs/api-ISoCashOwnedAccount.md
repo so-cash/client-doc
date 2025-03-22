@@ -1,4 +1,4 @@
-## 📜 ISoCashOwnedAccount
+## 📜 ISoCashOwnedAccount interface for bank account
 
 Exposes the functions and events for basic interactions with a bank account in so|cash.
 

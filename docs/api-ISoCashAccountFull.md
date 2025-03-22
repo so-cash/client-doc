@@ -1,4 +1,4 @@
-## 📜 ISoCashAccountFull
+## 📜 ISoCashAccountFull interface for bank account
 
 Exposes the functions and events for full interactions with a bank account in so|cash.
 

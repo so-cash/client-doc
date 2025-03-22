@@ -1,4 +1,4 @@
-## 📜 ISoCashAccountActions
+## 📜 ISoCashAccountActions interface for bank account
 
 The bank account actions service is used to operate payment from a bank account in so|cash.
 

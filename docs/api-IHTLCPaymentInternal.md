@@ -1,4 +1,4 @@
-## 📜 IHTLCPaymentInternal
+## 📜 IHTLCPaymentInternal interface 
 
 The HTLC payment service for an account emits events defined in this interface.
 

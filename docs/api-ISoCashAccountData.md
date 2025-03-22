@@ -1,4 +1,4 @@
-## 📜 ISoCashAccountData
+## 📜 ISoCashAccountData interface for bank account
 
 The bank account data service is used to manage the attributes and info of a bank account in so|cash.
 

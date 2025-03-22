@@ -1,4 +1,4 @@
-## 📜 IWhitelistedSendersInternal
+## 📜 IWhitelistedSendersInternal interface 
 
 The whitelisted senders service emits events defined in this interface.
 

@@ -1,4 +1,10 @@
-## 📜 IERC20Compatibility
+## 📜 IERC20 Compatibility
+
+Interface for ERC20 compatibility
+
+This interface is used by the bank modules to provide ERC20 compatibility 
+
+It inherits from [IERC20CompatibilityBaseInternal](./api-IERC20CompatibilityBaseInternal) and [IERC20CompatibilityMetadata](./api-IERC20CompatibilityMetadata)
 
 ### Events
 

@@ -1,4 +1,4 @@
-## 📜 I_IBANService
+## 📜 I_IBANService interface for international bank account number (IBAN) service
 
 Create and decode IBANs that are managed within the so|cash scope.
 

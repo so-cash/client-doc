@@ -1,4 +1,4 @@
-## 📜 ISoCashCountryReferentialFull
+## 📜 ISoCashCountryReferentialFull interface for each country referential service
 
 The country referential service is used to find and manage the referential of a country in the so|cash scope.
 

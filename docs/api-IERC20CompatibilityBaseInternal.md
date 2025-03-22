@@ -1,4 +1,8 @@
-## 📜 IERC20CompatibilityBaseInternal
+## 📜 IERC20 Compatibility Base Internal
+
+Interface for ERC20 compatibility, simply inherit from [IERC20Internal](./api-IERC20Internal)
+
+This interface may be deprecated in a future version
 
 ### Events
 

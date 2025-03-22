@@ -6200,7 +6200,7 @@
                 }
               ],
               "internalType": "struct ExecutionPlan",
-              "name": "plan",
+              "name": "",
               "type": "tuple"
             }
           ],
@@ -6965,7 +6965,7 @@
                 }
               ],
               "internalType": "struct ExecutionPlan",
-              "name": "plan",
+              "name": "",
               "type": "tuple"
             }
           ],

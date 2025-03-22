@@ -1,4 +1,4 @@
-## 📜 ISoCashGlobalReferentialFull
+## 📜 ISoCashGlobalReferentialFull interface for the entry point of the global referential service
 
 The global referential service is used to find and manage the global referential of the so|cash scope.
 

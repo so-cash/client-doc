@@ -1,4 +1,8 @@
-## 📜 IERC20CompatibilityBase
+## 📜 IERC20 Compatibility Base
+
+Interface for ERC20 compatibility
+
+This interface redeclare the [IERC20Base](./api-IERC20Base) interface to fix an import issue. Will be removed in a future version
 
 ### Events
 

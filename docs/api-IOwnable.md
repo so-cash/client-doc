@@ -1,4 +1,4 @@
-## 📜 IOwnable
+## 📜 IOwnable interface for ownership management
 
 Interface of the openzeppelin ownership management service.
 

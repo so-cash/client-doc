@@ -1,4 +1,4 @@
-## 📜 IWhitelistedSenders
+## 📜 IWhitelistedSenders interface for whitelisted senders
 
 The whitelisted senders service is used to manage the list of senders that are allowed to send transactions to the so|cash scope. 
 

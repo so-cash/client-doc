@@ -1,4 +1,4 @@
-## 📜 IHTLCPayment
+## 📜 IHTLCPayment interface for HTLC payments
 
 The HTLC payment service is used to manage the HTLC payments for an account. 
 

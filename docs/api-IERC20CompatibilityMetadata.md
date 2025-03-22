@@ -1,8 +1,8 @@
-## 📜 IERC20CompatibilityMetadata
+## 📜 IERC20 Compatibility Metadata
 
 Interface for ERC20 compatibility metadata
 
-This interface is used to provide metadata for ERC20 compatibility
+This interface is used by the bank modules to provide metadata for partial ERC20 compatibility
 
 ### Methods
 
