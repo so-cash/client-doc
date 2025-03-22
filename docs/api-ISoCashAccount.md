@@ -1,4 +1,4 @@
 ## 📜 ISoCashAccount
 
-Just a marker type - to give a type to a contract - it should not have function 
+Just a marker type - to give an abstract type to a contract that represents a bank account - it should not have function 
 

@@ -25,6 +25,8 @@ event FXSettlement(address indexed from, address indexed to, uint256 amount, uin
 
 
 #### 📢 __Whitelisted__
+Emitted when a sender is whitelisted or blacklisted.
+
 ```js
 event Whitelisted(address indexed account, bool status)
 ```
@@ -55,12 +57,16 @@ function bic() view returns (string)
 
 
 #### ⚙️ __blacklist__
+Remove sender from the whitelist.
+
 ```js
 function blacklist(address oldSender)
 ```
+Only an other whitelisted sender (or the owner, or the targetted sender) can blacklist a sender.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | oldSender | address | address |  |
+|1 | oldSender | address | address | The address of the sender to remove. |
 
 
 #### ⚙️ __codes__
@@ -112,17 +118,21 @@ function hashOfFXRate(tuple(uint256 rate, uint256 rateTime, uint256 expiryTime, 
 
 
 #### ⚙️ __isWhitelisted__
+Check if a sender is whitelisted.
+
 ```js
 function isWhitelisted(address sender) view returns (bool)
 ```
+No control of caller is done in this function.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | sender | address | address |  |
+|1 | sender | address | address | The address of the sender. |
 
 
 | Pos | Return | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | ⌀ | bool | bool |  |
+|1 | ⌀ | bool | bool | true if the sender is whitelisted or the owner, false otherwise. |
 
 
 #### ⚙️ __setCurrencyAccount__
@@ -199,11 +209,15 @@ function version() view returns (string)
 
 
 #### ⚙️ __whitelist__
+Whitelist a sender.
+
 ```js
 function whitelist(address newSender)
 ```
+Only an other whitelisted sender (or the owner) can whitelist a new sender.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | newSender | address | address |  |
+|1 | newSender | address | address | The address of the sender. |
 
 

@@ -32,8 +32,6 @@ function setCountry(address countryContract)
 ```
 The function is expected to emit the CountrySet event. 
 
-
-
 The country code is not expected because it is retrieved from the country contract via the interface [ISoCashCountryStateManagement](./api-ISoCashCountryStateManagement)
 
 | Pos | Parameter | Type | Solidity | Details |

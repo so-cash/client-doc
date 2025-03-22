@@ -4,8 +4,6 @@ The interface for the CountryReferential
 
 The interface is used to get the country code, the bank module, the correspondent banks, the FX provider and the SSI 
 
-
-
 Inherits from the [ISoCashBankController](./api-ISoCashBankController), [ISoCashBankControllerInternal](./api-ISoCashBankControllerInternal) and [ISoCashCountryStateManagement](./api-ISoCashCountryStateManagement) interfaces
 
 ### Events
@@ -84,16 +82,12 @@ event SSIChange(bytes10 indexed bankCode, bytes10[] codes, bytes3 indexed curren
 #### ⚙️ __addCorrespondent__
 Add a correspondent bank for a bank defined by its codes.  
 
-
-
 A Correspondent is a bank that can sent payment instruction to the bank and therefore call the `interbankTransfer()` function in the [ISoCashInterBank](./api-ISoCashInterBank) interface.
 
 ```js
 function addCorrespondent(bytes10[] codes, bytes3 currency, tuple(bytes2 country, bytes10[] codes) correspondent)
 ```
 The function is expected to emit the CorrespondentBankChange event. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 
@@ -124,8 +118,6 @@ Remove a correspondent bank for a bank defined by its codes.
 function delCorrespondent(bytes10[] codes, bytes3 currency, tuple(bytes2 country, bytes10[] codes) correspondent)
 ```
 The function is expected to emit the CorrespondentBankChange event. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 
@@ -158,8 +150,6 @@ The function returns the bank module for the bank defined by its codes and curre
 #### ⚙️ __getCorrespondentBanks__
 Get the correspondent banks for a bank defined by its codes and currency 
 
-
-
 Returns the list of banks that are allowed to send payment instructions to the bank.
 
 ```js
@@ -180,8 +170,6 @@ The function returns the list of correspondent banks defined by their country, c
 
 #### ⚙️ __getSSI__
 Get the Default Settlement Instructions (SSI) for a bank and currency 
-
-
 
 For the moment a single SSI can be defined by bank and currency.
 
@@ -248,11 +236,7 @@ function setBankController(bytes10 bankCode, address controller)
 ```
 The function is expected to emit the BankControllerSet event. 
 
-
-
 Only an allowed wallet for the country referential should be allowed to call this function.  
-
-
 
 Note that the wallet address can be the address of another smart contract that the bank is using to automate its declaration in the referential.
 
@@ -269,8 +253,6 @@ Set the bank module contract for a bank defined by its codes
 function setBankModule(bytes10[] codes, bytes3 currency, address bankModule)
 ```
 The function is expected to emit the BankModuleSet event. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 
@@ -289,11 +271,7 @@ function setFXProvider(bytes10 bankCode, address fxProvider)
 ```
 The function is expected to emit the FXProviderSet event. 
 
-
-
 The Fx provider does not need to be unique per bank code, there is no state recording of the FX Provided in the chain, only the event enables developpers to find the FX provider for a bank. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 
@@ -310,8 +288,6 @@ Set the SSI for a bank
 function setSSI(bytes10[] codes, bytes3 currency, tuple(uint8 model, address bank, address account) account)
 ```
 The function is expected to emit the SSIChange event. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 
@@ -330,8 +306,6 @@ function unsetBankController(bytes10 bankCode, address controller)
 ```
 The function is expected to emit the BankControllerSet event. 
 
-
-
 Only an allowed wallet for the country referential should be allowed to call this function.
 
 | Pos | Parameter | Type | Solidity | Details |
@@ -347,8 +321,6 @@ Remove the FX provider for a bank
 function unsetFXProvider(bytes10 bankCode, address fxProvider)
 ```
 The function is expected to emit the FXProviderSet event. 
-
-
 
 Only the controller of the bank should be allowed to call this function.
 

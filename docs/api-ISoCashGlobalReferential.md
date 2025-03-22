@@ -4,8 +4,6 @@ The interface for the GlobalReferential
 
 The interface is used to get the country manager, the country manager internal and the path finder 
 
-
-
 Inherits from the [ISoCashCountryManager](./api-ISoCashCountryManager), [ISoCashCountryManagerInternal](./api-ISoCashCountryManagerInternal) and [ISoCashPathFinder](./api-ISoCashPathFinder) interfaces
 
 ### Events
@@ -50,15 +48,9 @@ function resolveRoute(bytes3 currency, tuple(bytes2 country, bytes10[] codes) fr
 ```
 The function returns the sequence of banks : 
 
-
-
 The function operates using the declared correspondents in the referential.  
 
-
-
 It starts by the `target` bank, that holds the account of the beneficiary, and progress backward to the `from` bank, if found. 
-
-
 
 It returns the sequence of banks (identifier) ordered from the `from` bank to the `target` bank including both ends.
 
@@ -82,8 +74,6 @@ Set the country contract in the referential
 function setCountry(address countryContract)
 ```
 The function is expected to emit the CountrySet event. 
-
-
 
 The country code is not expected because it is retrieved from the country contract via the interface [ISoCashCountryStateManagement](./api-ISoCashCountryStateManagement)
 

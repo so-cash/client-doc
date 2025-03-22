@@ -14,15 +14,9 @@ function resolveRoute(bytes3 currency, tuple(bytes2 country, bytes10[] codes) fr
 ```
 The function returns the sequence of banks : 
 
-
-
 The function operates using the declared correspondents in the referential.  
 
-
-
 It starts by the `target` bank, that holds the account of the beneficiary, and progress backward to the `from` bank, if found. 
-
-
 
 It returns the sequence of banks (identifier) ordered from the `from` bank to the `target` bank including both ends.
 

@@ -4,23 +4,13 @@ Create and decode IBANs that are managed within the so|cash scope.
 
 This interface is used to create and decode IBANs. It is implemented by any service capable of creating or decoding IBANs, even on a partial scope. 
 
-
-
 Consult the documentation of the provider for more information.  
-
-
 
 Typical implementation are done by the so|cash referential, global and by country. 
 
-
-
 The general structure for coding and decoding IBANs is a country code (ISO-3166 2 letters codes) and a set of codes that are specific to the country. 
 
-
-
 For example, the IBAN for a French bank account is FR1420041010050500013M02606. 
-
-
 
 It is composed of FR (country code), 20041 (bank code), 01005 (branch code), 0500013M026 (account number), the last 3 are the codes.
 
@@ -53,8 +43,6 @@ function decodeIBAN(string iban) view returns (bool valid, bytes2 country, strin
 ```
 The function should return the country code and the codes if the IBAN is valid. The function should never fail. 
 
-
-
 If the country code or the bank code cannot be resolved then the valid flag should be false.
 
 | Pos | Parameter | Type | Solidity | Details |
@@ -76,8 +64,6 @@ Decode an IBAN to a bank module and an account smart contract address.
 function decodeIBANToContracts(string iban) view returns (bool valid, address bank, address account)
 ```
 The function should return the bank module and the account if the IBAN is valid. The function should never fail. 
-
-
 
 If the bank or the account cannot be resolved then the valid flag should be false and the addresses are zeroed.
 

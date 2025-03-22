@@ -4,8 +4,6 @@ The global referential service is used to find and manage the global referential
 
 This interface inherits from [ISoCashGlobalReferential](./api-ISoCashGlobalReferential) and [I_IBANService](./api-I_IBANService). 
 
-
-
 It is used to access the global referential and to create and decode IBANs.
 
 ### Events
@@ -51,8 +49,6 @@ function decodeIBAN(string iban) view returns (bool valid, bytes2 country, strin
 ```
 The function should return the country code and the codes if the IBAN is valid. The function should never fail. 
 
-
-
 If the country code or the bank code cannot be resolved then the valid flag should be false.
 
 | Pos | Parameter | Type | Solidity | Details |
@@ -74,8 +70,6 @@ Decode an IBAN to a bank module and an account smart contract address.
 function decodeIBANToContracts(string iban) view returns (bool valid, address bank, address account)
 ```
 The function should return the bank module and the account if the IBAN is valid. The function should never fail. 
-
-
 
 If the bank or the account cannot be resolved then the valid flag should be false and the addresses are zeroed.
 
@@ -117,15 +111,9 @@ function resolveRoute(bytes3 currency, tuple(bytes2 country, bytes10[] codes) fr
 ```
 The function returns the sequence of banks : 
 
-
-
 The function operates using the declared correspondents in the referential.  
 
-
-
 It starts by the `target` bank, that holds the account of the beneficiary, and progress backward to the `from` bank, if found. 
-
-
 
 It returns the sequence of banks (identifier) ordered from the `from` bank to the `target` bank including both ends.
 
@@ -149,8 +137,6 @@ Set the country contract in the referential
 function setCountry(address countryContract)
 ```
 The function is expected to emit the CountrySet event. 
-
-
 
 The country code is not expected because it is retrieved from the country contract via the interface [ISoCashCountryStateManagement](./api-ISoCashCountryStateManagement)
 

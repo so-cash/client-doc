@@ -4,8 +4,6 @@ The interface for the BankController service that enables a country referential 
 
 The interface is used to set and unset the bank controller for a bank and check the current status of the controller. 
 
-
-
 Several controllers can be set for a particular bank code.
 
 ### Methods
@@ -37,11 +35,7 @@ function setBankController(bytes10 bankCode, address controller)
 ```
 The function is expected to emit the BankControllerSet event. 
 
-
-
 Only an allowed wallet for the country referential should be allowed to call this function.  
-
-
 
 Note that the wallet address can be the address of another smart contract that the bank is using to automate its declaration in the referential.
 
@@ -58,8 +52,6 @@ Unset the bank controller for a bank code
 function unsetBankController(bytes10 bankCode, address controller)
 ```
 The function is expected to emit the BankControllerSet event. 
-
-
 
 Only an allowed wallet for the country referential should be allowed to call this function.
 

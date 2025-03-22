@@ -13,6 +13,8 @@ event OwnershipTransferred(address indexed previousOwner, address indexed newOwn
 
 
 #### 📢 __Whitelisted__
+Emitted when a sender is whitelisted or blacklisted.
+
 ```js
 event Whitelisted(address indexed account, bool status)
 ```
@@ -25,12 +27,16 @@ event Whitelisted(address indexed account, bool status)
 ### Methods
 
 #### ⚙️ __blacklist__
+Remove sender from the whitelist.
+
 ```js
 function blacklist(address oldSender)
 ```
+Only an other whitelisted sender (or the owner, or the targetted sender) can blacklist a sender.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | oldSender | address | address |  |
+|1 | oldSender | address | address | The address of the sender to remove. |
 
 
 #### ⚙️ __isWhitelisted__
@@ -76,11 +82,15 @@ Transfers ownership of the contract to a new account (`newOwner`). Can only be c
 
 
 #### ⚙️ __whitelist__
+Whitelist a sender.
+
 ```js
 function whitelist(address newSender)
 ```
+Only an other whitelisted sender (or the owner) can whitelist a new sender.
+
 | Pos | Parameter | Type | Solidity | Details |
 | --- | --- | --- | --- | --- |
-|1 | newSender | address | address |  |
+|1 | newSender | address | address | The address of the sender. |
 
 
